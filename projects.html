@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<h1>Projects</h1>
+<ul class="collapsible popout" data-collapsible="expandable">
+	{% for project in site.posts %}
+	<li>
+      <div class="collapsible-header">{{project.title}}</div>
+      <div class="collapsible-body"><span>{{project.desc}}</span></div>
+    </li>
+    {% endfor %}
+</ul>
