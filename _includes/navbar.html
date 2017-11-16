@@ -1,0 +1,20 @@
+<nav class="brown darken-1">
+	<div class="nav-wrapper container">
+	   	<a href="{{site.baseurl}}/index.html" class="brand-logo hide-on-small-only" id="lobster">Degaulle Masieh</a>
+	   	<a href="{{site.baseurl}}/index.html" class="brand-logo hide-on-med-and-up" id="lobster">DM</a>
+		
+		<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+		
+		<ul class="right hide-on-med-and-down">
+            <li class="{% if page.url == '/' %}active{% endif %}"><a href="{{site.baseurl}}/index.html">Home</a></li>
+		  	<li class="{% if page.url == '/projects.html' %}active{% endif %}"><a href="{{site.baseurl}}/projects.html">Projects</a></li>
+            <li class="{% if page.url == '/skills.html' %}active{% endif %}"><a href="{{site.baseurl}}/skills.html">Skills</a></li>
+		</ul>
+		
+		<ul class="side-nav" id="mobile-demo">
+            <li class="{% if page.url == '/' %}active{% endif %}"><a href="{{site.baseurl}}/index.html">Home</a></li>
+            <li class="{% if page.url == '/projects.html' %}active{% endif %}"><a href="{{site.baseurl}}/projects.html">Projects</a></li>
+            <li class="{% if page.url == '/skills.html' %}active{% endif %}"><a href="{{site.baseurl}}/skills.html">Skills</a></li>
+		</ul>
+	</div>
+</nav>
