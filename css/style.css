@@ -10,4 +10,17 @@ main {
 
 #lobster {
 	font-family: 'Lobster', cursive;
+	color: white;
+	font-size: 2.1rem;
 }
+
+.footHead {
+	margin-top: 0;
+}
+
+#buttonList {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 0 1.25rem;
+}
+
