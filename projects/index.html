@@ -9,11 +9,12 @@ layout: default
 		<ul class="collapsible" data-collapsible="expandable">
 			{% for project in site.categories.school-projects %}
 			<li>
-		      <div class="collapsible-header">{{project.title}}</div>
-		      <div class="collapsible-body"><span>{{project.desc}}</span></div>
-		    </li>
-		    {% endfor %}
+	    		<div class="collapsible-header">{{project.title}}</div>
+	    		<div class="collapsible-body truncate"><span>{{project.desc}}</span></div>
+			</li>
+			{% endfor %}
 		</ul>
+		
 		<ul class="pagination center">
 		    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
 		    <li class="active brown darken-1"><a href="#!">1</a></li>
@@ -27,21 +28,11 @@ layout: default
 
 	<div class="col s10 offset-s1 l6">
 		<h3>Real World Work</h3>
-		<!--
-		<ul class="collapsible hide-on-med-and-down" data-collapsible="expandable" id="opencollap">
-			{% for project in site.posts %}
-			<li>
-		      <div class="collapsible-header">{{project.title}}</div>
-		      <div class="collapsible-body"><span>{{project.desc}}</span></div>
-		    </li>
-		    {% endfor %}
-		</ul>
-		-->
 		<ul class="collapsible hide-on-med-and-down" data-collapsible="expandable">
 			{% for project in site.categories.real-world-work %}
 			<li>
 		      <div class="collapsible-header">{{project.title}}</div>
-		      <div class="collapsible-body"><span>{{project.desc}}</span></div>
+		      <div class="collapsible-body truncate"><span>{{project.desc}}</span></div>
 		    </li>
 		    {% endfor %}
 		</ul>
@@ -49,7 +40,7 @@ layout: default
 			{% for project in site.categories.real-world-work %}
 			<li>
 		      <div class="collapsible-header">{{project.title}}</div>
-		      <div class="collapsible-body"><span>{{project.desc}}</span></div>
+		      <div class="collapsible-body truncate"><span>{{project.desc}}</span></div>
 		    </li>
 		    {% endfor %}
 		</ul>
