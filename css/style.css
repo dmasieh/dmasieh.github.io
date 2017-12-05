@@ -26,3 +26,7 @@ main {
 	height: 500px;
 }
 
+#detailButton {
+	padding: 8px 8px;
+}
+
