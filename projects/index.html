@@ -4,22 +4,25 @@ layout: default
 <h1 class="center">All Projects</h1>
 <div class="row">
 	<div class="col s12">
-		<ul class="collapsible" data-collapsible="expandable" id="closecollap">
+		<ul class="collapsible popout" data-collapsible="expandable">
 			{% for project in site.posts %}
 			<li>
-		      <div class="collapsible-header">{{project.title}}</div>
-		      <div class="collapsible-body"><span>{{project.desc}}</span></div>
+		      <div class="collapsible-header">{{project.projName}} - {{project.projTitle}}</div>
+		      <div class="collapsible-body">
+		      	<div class="row">
+		      		<div class="col l6 s6 offset-s3">
+		      			<img class="responsive-img materialboxed" src="{{project.source}}">
+		      		</div>
+		      		<div class="col l6 s12">
+		      			<span>{{project.desc}}</span>
+		      			<br>
+		      			<br>
+		      			<a class="waves-effect waves-light btn" href="{{project.url}}">This GitHub Repo</a>
+		      		</div>
+		      	</div>
+		      </div>
 		    </li>
 		    {% endfor %}
-		</ul>
-		<ul class="pagination center">
-		    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-		    <li class="active brown darken-1"><a href="#!">1</a></li>
-		    <li class="waves-effect"><a href="#!">2</a></li>
-		    <li class="waves-effect"><a href="#!">3</a></li>
-		    <li class="waves-effect"><a href="#!">4</a></li>
-		    <li class="waves-effect"><a href="#!">5</a></li>
-		    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
 		</ul>
 	</div>
 </div>

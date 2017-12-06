@@ -23,10 +23,13 @@ main {
 }
 
 .carousel {
-	height: 500px;
+	height: 600px;
 }
 
 #detailButton {
 	padding: 8px 8px;
 }
 
+#fat-panel {
+	padding: 24px 24px 1px 24px;
+}
